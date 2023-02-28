@@ -19,7 +19,6 @@ class CharacterDetailVC: UIViewController,UIAnimatable, UICollectionViewDelegate
     @IBOutlet weak var eventsdetailCollection: UICollectionView!
     var charDetailData: CharDetailDataClass?
     let characterDetailVM = CharacterDetailVM()
-    var characterID: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

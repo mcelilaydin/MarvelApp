@@ -17,8 +17,6 @@ class EventsTVC: UITableViewController, UIAnimatable {
         setView()
         eventParse()
     }
-
-    // MARK: - Table view data source
     
     private func setView(){
         title = "Events"
@@ -51,6 +49,5 @@ class EventsTVC: UITableViewController, UIAnimatable {
         }
         return cell
     }
-
 
 }

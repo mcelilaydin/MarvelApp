@@ -40,6 +40,7 @@
 		4C0D70E229ABB6EB00383390 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D70E129ABB6EB00383390 /* CharacterDetail.swift */; };
 		4C0D70E429ABB7B500383390 /* CharacterDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D70E329ABB7B500383390 /* CharacterDetailVM.swift */; };
 		4C10DECA29ABFC12004F3525 /* CollectionViewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10DEC929ABFC12004F3525 /* CollectionViewsCell.swift */; };
+		4C274D9429AEC20F006E25A0 /* Loaf in Frameworks */ = {isa = PBXBuildFile; productRef = 4C274D9329AEC20F006E25A0 /* Loaf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0D70B629A801DD00383390 /* SDWebImage in Frameworks */,
+				4C274D9429AEC20F006E25A0 /* Loaf in Frameworks */,
 				4C0D70A829A7F1A800383390 /* MBProgressHUD in Frameworks */,
 				4C0D70B829A801DD00383390 /* SDWebImageMapKit in Frameworks */,
 				4C0D709A29A542FE00383390 /* Alamofire in Frameworks */,
@@ -285,6 +287,7 @@
 				4C0D70A729A7F1A800383390 /* MBProgressHUD */,
 				4C0D70B529A801DD00383390 /* SDWebImage */,
 				4C0D70B729A801DD00383390 /* SDWebImageMapKit */,
+				4C274D9329AEC20F006E25A0 /* Loaf */,
 			);
 			productName = MarvelApp;
 			productReference = 4C0D707329A4480400383390 /* MarvelApp.app */;
@@ -318,6 +321,7 @@
 				4C0D709829A542FE00383390 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4C0D70A629A7F1A800383390 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				4C0D70B429A801DD00383390 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				4C274D9229AEC20F006E25A0 /* XCRemoteSwiftPackageReference "Loaf" */,
 			);
 			productRefGroup = 4C0D707429A4480400383390 /* Products */;
 			projectDirPath = "";
@@ -615,6 +619,14 @@
 				kind = branch;
 			};
 		};
+		4C274D9229AEC20F006E25A0 /* XCRemoteSwiftPackageReference "Loaf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/schmidyy/Loaf";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -637,6 +649,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4C0D70B429A801DD00383390 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		4C274D9329AEC20F006E25A0 /* Loaf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C274D9229AEC20F006E25A0 /* XCRemoteSwiftPackageReference "Loaf" */;
+			productName = Loaf;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -25,10 +25,4 @@ class CollectionViewsCell: UICollectionViewCell {
             self.eventsNameLabel.text = model.name
         }
     }
-    
-    func seriesConfigure(with model: CharDetailComicsItem){
-        DispatchQueue.main.async {
-            self.seriesNameLabel.text = model.name
-        }
-    }
 }

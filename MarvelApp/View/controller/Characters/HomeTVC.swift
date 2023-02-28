@@ -21,6 +21,8 @@ class HomeTVC: UITableViewController,UIAnimatable {
         characterParse(pageNumber: 0)
     }
     
+    /*
+     //MARK: PAGİNATİON !
     private func createSpinnerFooter() -> UIView {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 75))
         let spinner = UIActivityIndicatorView()
@@ -29,6 +31,7 @@ class HomeTVC: UITableViewController,UIAnimatable {
         spinner.startAnimating()
         return footerView
     }
+     */
     
     private func setView(){
         title = "Characters"
@@ -44,7 +47,6 @@ class HomeTVC: UITableViewController,UIAnimatable {
             }
         }
     }
-    
     
     private func selectRow(id: Int){
         showLoadingAnimation()

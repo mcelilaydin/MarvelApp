@@ -15,7 +15,6 @@ import typealias CommonCrypto.CC_LONG
 
 class EventsVM {
     
-    private var baseUrl = "https://gateway.marvel.com:443/v1/public/events"
     private var apiKey = "d8250f05f7e6f2ddd4409ce29499c6cb"
     private var privateKey = "8d7e967bc89d05da24576945ba082aab847e5b15"
     

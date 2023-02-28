@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Loaf
 
 class OnboardingVC: UIViewController {
     
@@ -52,8 +53,7 @@ class OnboardingVC: UIViewController {
             vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true)
         }else {
-           // Loaf(LocalizableString.SwipeRight.localized, state: .error, sender: self).show()
-            print("Sağa tıkla")
+            Loaf("Swipe Right", state: .error, sender: self).show()
         }
     }
     
