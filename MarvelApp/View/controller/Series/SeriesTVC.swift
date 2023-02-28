@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class SeriesTVC: UITableViewController,UIAnimatable {
     
     let vm = SeriesVM()
@@ -15,6 +14,7 @@ class SeriesTVC: UITableViewController,UIAnimatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setView()
         seriesParse()
         
     }
