@@ -205,6 +205,7 @@
 		4C0D70AC29A7F38A00383390 /* Supporting Groups */ = {
 			isa = PBXGroup;
 			children = (
+				4C0D70D329ABB19000383390 /* CollectionsCell */,
 				4C0D70A229A7E2DA00383390 /* TableCell */,
 				4C0D70AD29A7F3AA00383390 /* CustomTabbar */,
 			);
@@ -251,7 +252,6 @@
 		4C0D70CE29AA7D3700383390 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				4C0D70D329ABB19000383390 /* CollectionsCell */,
 				4C0D70CF29AA7D5800383390 /* CharacterDetailVC.swift */,
 				4C0D70E329ABB7B500383390 /* CharacterDetailVM.swift */,
 			);
