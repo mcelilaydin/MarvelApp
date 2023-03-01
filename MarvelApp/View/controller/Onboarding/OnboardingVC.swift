@@ -48,9 +48,9 @@ class OnboardingVC: UIViewController {
     @IBAction func nextbtnClicked(_ sender: Any) {
         if currentPage == slides.count - 1 {
             UserDefaults.standard.set(true, forKey: "openApp")
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "animationVC") as! AnimationVC
             vc.modalPresentationStyle = .fullScreen
-            vc.modalTransitionStyle = .flipHorizontal
+            vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true)
         }else {
             Loaf("Swipe Right", state: .error, sender: self).show()

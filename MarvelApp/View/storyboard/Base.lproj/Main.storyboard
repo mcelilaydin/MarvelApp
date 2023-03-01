@@ -132,7 +132,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7GO-Bq-nM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3851" y="-46"/>
+            <point key="canvasLocation" x="-5056" y="-46"/>
+        </scene>
+        <!--AnimationVC-->
+        <scene sceneID="BnS-8R-qfw">
+            <objects>
+                <viewController storyboardIdentifier="animationVC" id="7Db-Zc-JZR" customClass="AnimationVC" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q4Z-BM-BaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1M-xr-rfL" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="42" y="169" width="309" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yJd-qN-CpF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yJd-qN-CpF" firstAttribute="bottom" secondItem="G1M-xr-rfL" secondAttribute="bottom" constant="275" id="KXf-bB-Zvx"/>
+                            <constraint firstItem="G1M-xr-rfL" firstAttribute="top" secondItem="yJd-qN-CpF" secondAttribute="top" constant="110" id="Pse-NE-ZVf"/>
+                            <constraint firstItem="G1M-xr-rfL" firstAttribute="leading" secondItem="yJd-qN-CpF" secondAttribute="leading" constant="42" id="Qoj-ot-KQC"/>
+                            <constraint firstItem="yJd-qN-CpF" firstAttribute="trailing" secondItem="G1M-xr-rfL" secondAttribute="trailing" constant="42" id="y25-ug-0cB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="G1M-xr-rfL" id="GZB-iW-eyg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDl-hQ-xFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3947.3282442748091" y="-25.35211267605634"/>
         </scene>
         <!--Bubble Tab Bar Controller-->
         <scene sceneID="gUd-zs-zbh">

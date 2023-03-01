@@ -6,6 +6,7 @@
 ## Features 🔥
 
 - Onboarding
+- PaperOnboarding
 - MVVM Design Pattern
 - Tabbar
 - UICollectionView
@@ -19,7 +20,7 @@
 - Alamofire
 - MBProgressHUD
 - Loaf
-- PaperOnboarding
+- Lottie
 
 ## Requirements 🛠️
 
