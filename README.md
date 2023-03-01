@@ -14,6 +14,7 @@
 - BubbleTabbar
 - UITableView
 - Custom TableView Cell
+- SafariServices
 - SDWebImage
 - Alamofire
 - MBProgressHUD
