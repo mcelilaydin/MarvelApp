@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XAi-Kn-TsN">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -453,35 +454,25 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jMd-aN-PQm">
-                                <rect key="frame" x="16" y="675.66666666666663" width="207" height="64"/>
+                                <rect key="frame" x="16" y="675.66666666666663" width="187" height="70.666666666666629"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j69-La-aOK">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j69-La-aOK">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="33.333333333333336"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="go to Wiki:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nA-aS-Uza">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="1fH-qK-grB"/>
-                                                    <constraint firstAttribute="width" constant="120" id="vhn-2e-A5w"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-MI-S9s">
-                                                <rect key="frame" x="128" y="0.0" width="79" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Click">
+                                                        <fragment content="go to wiki..">
                                                             <attributes>
+                                                                <color key="NSColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" size="14" name="AvenirNext-Italic"/>
-                                                                <font key="NSOriginalFont" size="14" name="AvenirNext-Italic"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                    <color key="baseForegroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseForegroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="0.64889369630381422" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="wikiButtonClicked:" destination="wsY-58-o08" eventType="touchUpInside" id="k9A-hH-Ifc"/>
@@ -489,28 +480,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ag1-7q-xIB">
-                                        <rect key="frame" x="0.0" y="34" width="207" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ag1-7q-xIB">
+                                        <rect key="frame" x="0.0" y="37.333333333333371" width="187" height="33.333333333333343"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="go to Detail:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDR-7S-Ihc">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="Ceh-sY-j2Y"/>
-                                                    <constraint firstAttribute="width" constant="120" id="okB-CR-dUg"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-4o-elW">
-                                                <rect key="frame" x="128" y="0.0" width="79" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Click">
+                                                        <fragment content="go to detail..">
                                                             <attributes>
                                                                 <font key="NSFont" size="14" name="AvenirNext-Italic"/>
-                                                                <font key="NSOriginalFont" size="14" name="AvenirNext-Italic"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -552,7 +532,7 @@
                             <constraint firstItem="Z3B-gE-FjL" firstAttribute="top" secondItem="pOq-iN-Ebc" secondAttribute="top" constant="8" id="iG4-Ab-izX"/>
                             <constraint firstItem="Z3B-gE-FjL" firstAttribute="leading" secondItem="pOq-iN-Ebc" secondAttribute="leading" constant="16" id="lZA-X2-xBU"/>
                             <constraint firstItem="pOq-iN-Ebc" firstAttribute="trailing" secondItem="YgB-6T-lKz" secondAttribute="trailing" constant="48" id="maa-hh-kJz"/>
-                            <constraint firstItem="pOq-iN-Ebc" firstAttribute="trailing" secondItem="jMd-aN-PQm" secondAttribute="trailing" constant="170" id="n5N-Zu-ARZ"/>
+                            <constraint firstItem="pOq-iN-Ebc" firstAttribute="trailing" secondItem="jMd-aN-PQm" secondAttribute="trailing" constant="190" id="n5N-Zu-ARZ"/>
                             <constraint firstItem="Cjj-ks-fb6" firstAttribute="leading" secondItem="pOq-iN-Ebc" secondAttribute="leading" constant="16" id="q76-0D-BxB"/>
                             <constraint firstItem="jMd-aN-PQm" firstAttribute="top" secondItem="Fxj-nn-f5S" secondAttribute="bottom" constant="16" id="rDh-xC-o9l"/>
                         </constraints>
