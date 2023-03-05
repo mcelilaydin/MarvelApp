@@ -34,4 +34,6 @@ Celil – [LinkedIn](https://www.linkedin.com/in/memduh-celil-aydın-444b64216/)
 
 ## Summary Video 👾  
 
+https://user-images.githubusercontent.com/63521900/222982225-ed08b58a-0601-45a0-bf97-69a94ecd8ce9.mp4
+
 
