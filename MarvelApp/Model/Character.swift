@@ -26,7 +26,8 @@ struct DataClass: Decodable {
 // MARK: - Result
 struct Results: Decodable {
     let id: Int?
-    let name, resultDescription: String?
+    let name: String?
+    let description: String?
     let modified: String?
     let thumbnail: Thumbnail?
     let resourceURI: String?
