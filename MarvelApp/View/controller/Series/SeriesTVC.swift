@@ -16,7 +16,6 @@ class SeriesTVC: UITableViewController,UIAnimatable {
         super.viewDidLoad()
         setView()
         seriesParse()
-        
     }
     
     private func seriesParse() {

@@ -13,6 +13,7 @@
 - Custom CollectionView Cell
 - Custom Tabbar
 - BubbleTabbar
+- Pagination
 - UITableView
 - Custom TableView Cell
 - SafariServices
