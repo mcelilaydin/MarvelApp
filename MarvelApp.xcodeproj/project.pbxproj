@@ -44,6 +44,7 @@
 		4CB89D0229AF8B2200214A26 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4CB89D0129AF8B2200214A26 /* Lottie */; };
 		4CB89D0529AF8B8000214A26 /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB89D0429AF8B8000214A26 /* AnimationVC.swift */; };
 		4CB89D0929AF902800214A26 /* 109259-hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CB89D0829AF902800214A26 /* 109259-hero.json */; };
+		4CB89D3E29B50A9800214A26 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB89D3D29B50A9800214A26 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		4C10DEC929ABFC12004F3525 /* CollectionViewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsCell.swift; sourceTree = "<group>"; };
 		4CB89D0429AF8B8000214A26 /* AnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
 		4CB89D0829AF902800214A26 /* 109259-hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "109259-hero.json"; sourceTree = "<group>"; };
+		4CB89D3D29B50A9800214A26 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				4C0D70A429A7EF3700383390 /* UIView+Extensions.swift */,
+				4CB89D3D29B50A9800214A26 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			files = (
 				4C0D70CB29AA6E6C00383390 /* OnboardingSlide.swift in Sources */,
 				4C0D70BB29A8098B00383390 /* Events.swift in Sources */,
+				4CB89D3E29B50A9800214A26 /* UIViewController+Extensions.swift in Sources */,
 				4C0D70C229AA5CCE00383390 /* SeriesTVC.swift in Sources */,
 				4C0D70E429ABB7B500383390 /* CharacterDetailVM.swift in Sources */,
 				4C0D70BF29A80BFF00383390 /* EventsTVC.swift in Sources */,

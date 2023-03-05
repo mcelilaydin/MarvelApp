@@ -14,7 +14,7 @@ class SeriesTVC: UITableViewController,UIAnimatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setView()
+        setNavi(title: "Series")
         seriesParse()
     }
     
@@ -28,10 +28,6 @@ class SeriesTVC: UITableViewController,UIAnimatable {
                 self?.tableView.reloadData()
             }
         }
-    }
-    
-    private func setView(){
-        title = "Series"
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

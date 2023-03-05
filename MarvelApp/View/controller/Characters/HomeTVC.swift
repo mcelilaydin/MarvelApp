@@ -17,12 +17,8 @@ class HomeTVC: UITableViewController,UIAnimatable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setView()
+        setNavi(title: "Characters")
         characterParse(pageNumber: characterData?.offset ?? 0)
-    }
-    
-    private func setView(){
-        title = "Characters"
     }
     
     private func characterParse(pageNumber: Int) {

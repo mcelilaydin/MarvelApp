@@ -14,12 +14,8 @@ class EventsTVC: UITableViewController, UIAnimatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setView()
+        setNavi(title: "Events")
         eventParse()
-    }
-    
-    private func setView(){
-        title = "Events"
     }
     
     private func eventParse() {
