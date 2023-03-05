@@ -59,7 +59,7 @@ class CharacterDetailVC: UIViewController,UIAnimatable, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == comicsdetailCollection {
-            let cell = comicsdetailCollection.dequeueReusableCell(withReuseIdentifier: "ComicCollectionViewCell", for: indexPath) as! CollectionViewsCell
+            let cell = comicsdetailCollection.dequeueReusableCell(withReuseIdentifier: Constants.Detail.comicCollectionIdentifier, for: indexPath) as! CollectionViewsCell
             if let charDetailData = self.charDetailData {
                 if charDetailData.results?[0].comics?.items?.count == 0 {
                     cell.comicsNameLabel.text = "Comics does not exist."
@@ -70,7 +70,7 @@ class CharacterDetailVC: UIViewController,UIAnimatable, UICollectionViewDelegate
             }
             return cell
         } else {
-            let cell = eventsdetailCollection.dequeueReusableCell(withReuseIdentifier: "EventCollectionViewCell", for: indexPath) as! CollectionViewsCell
+            let cell = eventsdetailCollection.dequeueReusableCell(withReuseIdentifier: Constants.Detail.eventCollectionIdentifier, for: indexPath) as! CollectionViewsCell
             if let charDetailData = self.charDetailData {
                 if charDetailData.results?[0].events?.items?.count == 0 {
                     cell.eventsNameLabel.text = "Events does not exist."

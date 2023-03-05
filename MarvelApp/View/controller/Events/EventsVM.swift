@@ -15,9 +15,6 @@ import typealias CommonCrypto.CC_LONG
 
 class EventsVM {
     
-    private var apiKey = "d8250f05f7e6f2ddd4409ce29499c6cb"
-    private var privateKey = "8d7e967bc89d05da24576945ba082aab847e5b15"
-    
     static var header: HTTPHeaders = [
           "Accept": "*/*"
       ]
@@ -39,10 +36,10 @@ class EventsVM {
     func parseEvent(comp: @escaping (EventsDataClass) -> Void) {
         
         let ts = "\(Int((Date().timeIntervalSince1970 * 1000.0).rounded()))"
-        let hash = HomeVM.MD5Hex(string: "\(ts)\(privateKey)\(apiKey)")
-        let params = ["apikey" : apiKey,"ts" : ts,"hash" : hash]
+        let hash = HomeVM.MD5Hex(string: "\(ts)\(Constants.privateKey)\(Constants.apiKey)")
+        let params = ["apikey" : Constants.apiKey,"ts" : ts,"hash" : hash]
 
-        guard let url = URL(string: "https://gateway.marvel.com:443/v1/public/events") ?? nil else { return }
+        guard let url = URL(string: Constants.Events.pageApi) ?? nil else { return }
         
         AF.request(url as URLConvertible, method: .get, parameters: params , encoder: URLEncodedFormParameterEncoder.default, headers: HomeVM.header).response { response in
             if let data = response.data {

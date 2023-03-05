@@ -45,6 +45,7 @@
 		4CB89D0529AF8B8000214A26 /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB89D0429AF8B8000214A26 /* AnimationVC.swift */; };
 		4CB89D0929AF902800214A26 /* 109259-hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CB89D0829AF902800214A26 /* 109259-hero.json */; };
 		4CB89D3E29B50A9800214A26 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB89D3D29B50A9800214A26 /* UIViewController+Extensions.swift */; };
+		4CB89D4329B515D900214A26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB89D4229B515D900214A26 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		4CB89D0429AF8B8000214A26 /* AnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
 		4CB89D0829AF902800214A26 /* 109259-hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "109259-hero.json"; sourceTree = "<group>"; };
 		4CB89D3D29B50A9800214A26 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4CB89D4229B515D900214A26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				4C0D707629A4480400383390 /* AppDelegate.swift */,
 				4C0D707829A4480400383390 /* SceneDelegate.swift */,
+				4CB89D4129B515CA00214A26 /* Constants */,
 				4C0D708B29A448A500383390 /* Model */,
 				4C0D708A29A448A000383390 /* View */,
 				4C0D70A329A7EF0800383390 /* Extensions */,
@@ -293,6 +296,14 @@
 			path = JsonFile;
 			sourceTree = "<group>";
 		};
+		4CB89D4129B515CA00214A26 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4CB89D4229B515D900214A26 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +419,7 @@
 				4C0D70A529A7EF3700383390 /* UIView+Extensions.swift in Sources */,
 				4C0D709329A53BEC00383390 /* Character.swift in Sources */,
 				4C10DECA29ABFC12004F3525 /* CollectionViewsCell.swift in Sources */,
+				4CB89D4329B515D900214A26 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

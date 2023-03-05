@@ -14,7 +14,7 @@ class EventsTVC: UITableViewController, UIAnimatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavi(title: "Events")
+        setNavi(title: Constants.Events.pageTitle)
         eventParse()
     }
     
@@ -38,7 +38,7 @@ class EventsTVC: UITableViewController, UIAnimatable {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("TabbarCell", owner: self, options: nil)?.first as! TabbarCell
+        let cell = Bundle.main.loadNibNamed(Constants.tabbarCell, owner: self, options: nil)?.first as! TabbarCell
         if let eventResults = eventsData?.results {
             let eventResult = eventResults[indexPath.row]
             cell.eventConfigure(with: eventResult)

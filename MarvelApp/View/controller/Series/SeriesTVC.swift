@@ -14,7 +14,7 @@ class SeriesTVC: UITableViewController,UIAnimatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavi(title: "Series")
+        setNavi(title: Constants.Series.pageTitle)
         seriesParse()
     }
     
@@ -23,7 +23,6 @@ class SeriesTVC: UITableViewController,UIAnimatable {
         vm.parseSerie { [weak self] resultSerie in
             self?.hideLoadingAnimation()
             self?.seriesData = resultSerie
-            print(self?.seriesData)
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
@@ -39,7 +38,7 @@ class SeriesTVC: UITableViewController,UIAnimatable {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("TabbarCell", owner: self, options: nil)?.first as! TabbarCell
+        let cell = Bundle.main.loadNibNamed(Constants.tabbarCell, owner: self, options: nil)?.first as! TabbarCell
         if let seriesResults = seriesData?.results {
             let seriesResult = seriesResults[indexPath.row]
             cell.seriesConfigure(with: seriesResult)

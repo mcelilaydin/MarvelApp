@@ -17,7 +17,7 @@ class HomeTVC: UITableViewController,UIAnimatable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavi(title: "Characters")
+        setNavi(title: Constants.Character.pageTitle)
         characterParse(pageNumber: characterData?.offset ?? 0)
     }
     
@@ -42,12 +42,12 @@ class HomeTVC: UITableViewController,UIAnimatable {
         characterDetailVM.parseCharacterDetail(characterId: id) { result in
             self.hideLoadingAnimation()
             self.charDetailData = result
-            self.performSegue(withIdentifier: "showDetail", sender: self.charDetailData)
+            self.performSegue(withIdentifier: Constants.Character.toDetail, sender: self.charDetailData)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetail",
+        if segue.identifier == Constants.Character.toDetail,
            let destination = segue.destination as? CharacterDetailVC,
            let charDetailData = sender as? CharDetailDataClass {
             destination.charDetailData = charDetailData
@@ -63,7 +63,7 @@ class HomeTVC: UITableViewController,UIAnimatable {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("TabbarCell", owner: self, options: nil)?.first as! TabbarCell
+        let cell = Bundle.main.loadNibNamed(Constants.tabbarCell, owner: self, options: nil)?.first as! TabbarCell
         if let characterResults = characterData?.results {
             let characterResult = characterResults[indexPath.row]
             cell.homeConfigure(with: characterResult)

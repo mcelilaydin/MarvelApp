@@ -47,8 +47,8 @@ class OnboardingVC: UIViewController {
     
     @IBAction func nextbtnClicked(_ sender: Any) {
         if currentPage == slides.count - 1 {
-            UserDefaults.standard.set(true, forKey: "openApp")
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "animationVC") as! AnimationVC
+            UserDefaults.standard.set(true, forKey: Constants.userDefault)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: Constants.Animation.identifier) as! AnimationVC
             vc.modalPresentationStyle = .fullScreen
             vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true)

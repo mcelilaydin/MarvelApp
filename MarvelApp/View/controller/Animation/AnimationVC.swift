@@ -18,7 +18,7 @@ class AnimationVC: UIViewController {
         lottieAnimation()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3){
             self.stopAnimation()
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: Constants.tabbarIdenrifier) as! UITabBarController
             vc.modalPresentationStyle = .fullScreen
             vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true)
