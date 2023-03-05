@@ -18,7 +18,8 @@ struct Character: Decodable {
 
 // MARK: - DataClass
 struct DataClass: Decodable {
-    let limit, offset, total, count: Int?
+    let limit, total, count: Int?
+    var offset: Int?
     var results: [Results]?
 }
 

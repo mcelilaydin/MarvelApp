@@ -18,20 +18,8 @@ class HomeTVC: UITableViewController,UIAnimatable {
     override func viewDidLoad() {
         super.viewDidLoad()
         setView()
-        characterParse(pageNumber: 0)
+        characterParse(pageNumber: characterData?.offset ?? 0)
     }
-    
-    /*
-     //MARK: PAGİNATİON !
-    private func createSpinnerFooter() -> UIView {
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 75))
-        let spinner = UIActivityIndicatorView()
-        spinner.center = footerView.center
-        footerView.addSubview(spinner)
-        spinner.startAnimating()
-        return footerView
-    }
-     */
     
     private func setView(){
         title = "Characters"
@@ -41,7 +29,12 @@ class HomeTVC: UITableViewController,UIAnimatable {
         showLoadingAnimation()
         characterVM.parseCharacter(pageNumber: pageNumber) { [weak self] result in
             self?.hideLoadingAnimation()
-            self?.characterData = result
+            if self?.characterData == nil {
+                self?.characterData = result
+            }else {
+                self?.characterData?.offset = result.offset ?? 1
+                self?.characterData?.results?.append(contentsOf: (result.results)!)
+            }
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
@@ -85,6 +78,13 @@ class HomeTVC: UITableViewController,UIAnimatable {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let characterResults = characterData?.results else { return }
         selectRow(id: characterResults[indexPath.row].id ?? 0)
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == (characterData?.results?.count ?? 0) - 1 {
+        print("another offset request")
+        characterParse(pageNumber:(characterData?.offset ?? 1) + 1)
+        }
     }
     
 }
